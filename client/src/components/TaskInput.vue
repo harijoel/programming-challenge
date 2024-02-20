@@ -32,6 +32,8 @@ const handleSubmitTask = () => {
   border-style: solid;
   border-color: var(--color-accent-one);
   border-width: 1px;
+  display: flex;
+  align-items: center;
 }
 .add-button {
   border-radius: var(--border-radius-1);
