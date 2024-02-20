@@ -13,8 +13,6 @@
           :key="task.tasksId"
           :task="task"
         />
-
-        <!-- Mission one is inside the task input! -->
         <TaskInput />
       </div>
     </div>
