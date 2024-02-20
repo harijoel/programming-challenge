@@ -46,4 +46,44 @@ const handleSubmitTask = () => {
   cursor: pointer;
 }
 
+
+/* Target the placeholder text of an input */
+::-webkit-input-placeholder { /* Webkit browsers (Safari, Chrome) */
+    font-style: italic; /* Make the placeholder text italic */
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-style: italic; /* Make the placeholder text italic */
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-style: italic; /* Make the placeholder text italic */
+}
+:-ms-input-placeholder { /* Internet Explorer */
+    font-style: italic; /* Make the placeholder text italic */
+}
+
+input[type="text"] {
+  color: var(--color-heading);
+  font-size: var(--fs-3);
+  font-weight: 500;
+}
+
+input {
+    background-color:transparent;
+    border: 0px solid;
+    height:22.39px;
+    width:250px;
+    caret-color: var(--color-accent-one);
+}
+input:focus {
+    outline:none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+form {
+  height: 22.39px;
+}
+
 </style>
