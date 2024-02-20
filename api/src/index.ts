@@ -32,28 +32,9 @@ const init = async () => {
 
   server.route({
     method: 'POST',
-    path: '/mission-two', // Bonus points if you give it a sensical name ;)
+    path: '/insert-task',
     handler: async (r, h) => {
-      /**
-       * Mission Two: Insert a task into the database.
-       * 
-       * Receive a post request from the front end
-       * and insert it into the database.details, too
-       * 
-       * Definition of done:
-       * [ ] the record is inserted into the database
-       * [ ] a success response is returned
-       * 
-       * Your submission will be judged out of 10 points based on
-       * the following criteria:
-       * 
-       * - Works as expected - 5 points
-       * - Code quality - 5 points
-       *   - Is the code clean and easy to read?
-       *   - Are there any obvious bugs?
-       *   - Are there any obvious performance issues?
-       *   - Are there comments where necessary?
-       */
+      
     } 
   });
 
