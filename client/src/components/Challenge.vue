@@ -26,6 +26,8 @@ import TaskInput from './TaskInput.vue';
 /* composables */
 import { useGetTasks } from '../composables/useGetTasks';
 
+// note to self: figure out how to make this function run again 
+// when database gets succesfully updated
 const { tasks, state } = useGetTasks();
 </script>
 
