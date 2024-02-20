@@ -1,0 +1,264 @@
+@use 'sass:list';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* theme declaration */
+:root {
+  /* colors */
+  --theme-c-soft-black: #34495E;
+  --theme-c-soft-black-transparent: #34495e61;
+  --theme-c-dark-grey: #9DA4B2;
+  --theme-c-grey: #DCE1EA;
+  --theme-c-soft-grey: #E7EAEF;
+  --theme-c-soft-white: #F6F8FC;
+  --theme-c-soft-white-light: #F6F8FCAA;
+  --theme-c-soft-white-extra-light: #F6F8FC88;
+  --theme-c-white: #fff;
+  --theme-c-blue: #139FDB;
+  --theme-c-blue-transparent: #139fdb1f;
+  --theme-c-light-blue: #B8E2F4;
+  --theme-c-aqua: #30EEEE;
+  --theme-c-red: #EC5656;
+  --theme-c-light-red: #f8e5e5;
+  --theme-c-transparent-red: #Ec56561f;
+  --theme-c-soft-blue: #D0E1FF;
+  --theme-c-green: #4EA65C;
+
+  /* subject colors */
+  --theme-c-math: #139FDB;
+  --theme-c-math-light: #e7f5fb;
+  --theme-c-math-extra-light: #DDE9FF88;
+  --theme-c-math-transparent: #DDE9FF00;
+
+  --theme-c-ela: #FF9900;
+  --theme-c-ela-light: #FFECCF;
+  --theme-c-ela-extra-light: #FFECCF88;
+  --theme-c-ela-transparent: #FFECCF00;
+
+  --theme-c-eld: #ff4a9b;
+  --theme-c-eld-light: #f6d6e5;
+  --theme-c-eld-extra-light: #fbedf4;
+  --theme-c-eld-transparent: #fdf7fa;
+
+  --theme-c-social-studies: #F24E1E;
+  --theme-c-social-studies-light: #FFDACF;
+  --theme-c-social-studies-extra-light: #FFDACF88;
+  --theme-c-social-studies-transparent: #FFDACF00;
+
+  --theme-c-pe: #0BD88E;
+  --theme-c-pe-light: #D3FDEE;
+  --theme-c-pe-extra-light: #D3FDEE88;
+  --theme-c-pe-transparent: #D3FDEE00;
+
+  --theme-c-science: #9747FF;
+  --theme-c-science-light: #E9D8FF;
+  --theme-c-science-extra-light: #E9D8FF88;
+  --theme-c-science-transparent: #E9D8FF00;
+
+  /* box-shadows */
+  --theme-box-shadow-1:
+    0px 2px 8px rgba(52, 73, 94, 0.15),
+    0px 1px 2px rgba(52, 73, 94, 0.13);
+  --theme-box-shadow-2:
+    0px 9px 28px rgba(52, 73, 94, 0.15),
+    0px 1px 2px rgba(52, 73, 94, 0.13);
+  --theme-box-shadow-3:
+    0px 9px 28px rgba(19, 159, 219, 0.207);
+  // 0px 1px 2px rgba(19, 159, 219, 0.278);
+}
+
+/* semantic variables */
+:root {
+  /* colors */
+  --color-background: var(--theme-c-white);
+  --color-modal-backdrop: var(--theme-c-soft-black-transparent);
+
+  --color-border: var(--theme-c-dark-grey);
+  --color-border-light: var(--theme-c-soft-grey);
+
+  --color-input-background: var(--theme-c-soft-white);
+  --color-input-background-light: var(--theme-c-soft-white-light);
+  --color-input-background-extra-light: var(--theme-c-soft-white-extra-light);
+
+  --color-heading: var(--theme-c-soft-black);
+  --color-text: var(--theme-c-soft-black);
+  --color-text-inactive: var(--theme-c-dark-grey);
+
+  --color-error: var(--theme-c-red);
+  --color-error-light: var(--theme-c-light-red);
+  --color-error-transparent: var(--theme-c-transparent-red);
+  --color-success: var(--theme-c-green);
+
+  --color-accent-one: var(--theme-c-blue);
+  --color-accent-one-light: var(--theme-c-light-blue);
+  --color-accent-one-transparent: var(--theme-c-blue-transparent);
+  --color-accent-two: var(--theme-c-aqua);
+
+  --color-contrast-one: var(--theme-c-soft-white);
+  --color-contrast-two: var(--theme-c-soft-blue);
+  --color-contrast-three: var(--theme-c-grey);
+
+  /* subject colors */
+  --color-math: var(--theme-c-math);
+  --color-math-light: var(--theme-c-math-light);
+  --color-math-extra-light: var(--theme-c-math-extra-light);
+  --color-math-transparent: var(--theme-c-math-transparent);
+
+  --color-ela: var(--theme-c-ela);
+  --color-ela-light: var(--theme-c-ela-light);
+  --color-ela-extra-light: var(--theme-c-ela-extra-light);
+  --color-ela-transparent: var(--theme-c-ela-transparent);
+
+  --color-eld: var(--theme-c-eld);
+  --color-eld-light: var(--theme-c-eld-light);
+  --color-eld-extra-light: var(--theme-c-eld-extra-light);
+  --color-eld-transparent: var(--theme-c-eld-transparent);
+
+  --color-social-studies: var(--theme-c-social-studies);
+  --color-social-studies-light: var(--theme-c-social-studies-light);
+  --color-social-studies-extra-light: var(--theme-c-social-studies-extra-light);
+  --color-social-studies-transparent: var(--theme-c-social-studies-transparent);
+
+  --color-pe: var(--theme-c-pe);
+  --color-pe-light: var(--theme-c-pe-light);
+  --color-pe-extra-light: var(--theme-c-pe-extra-light);
+  --color-pe-transparent: var(--theme-c-pe-transparent);
+  --color-physical-education: var(--theme-c-pe);
+  --color-physical-education-light: var(--theme-c-pe-light);
+  --color-physical-education-extra-light: var(--theme-c-pe-extra-light);
+  --color-physical-education-transparent: var(--theme-c-pe-transparent);
+
+  --color-science: var(--theme-c-science);
+  --color-science-light: var(--theme-c-science-light);
+  --color-science-extra-light: var(--theme-c-science-extra-light);
+  --color-science-transparent: var(--theme-c-science-transparent);
+
+  /* gradient */
+  --gradient-accent: linear-gradient(90deg,
+      var(--color-accent-one),
+      var(--color-accent-two));
+  --gradient-light: linear-gradient(113.13deg,
+      var(--color-contrast-two) 0%,
+      var(--color-contrast-one) 61.76%);
+  --gradient-orange: linear-gradient(180deg,
+    rgba(255, 236, 207, 0.5) 0%,
+    rgba(255, 236, 207, 0) 100%);
+
+
+  /* box-shadow */
+  --box-shadow-1: var(--theme-box-shadow-1);
+  --box-shadow-2: var(--theme-box-shadow-2);
+  --box-shadow-3: var(--theme-box-shadow-3);
+}
+
+:root {
+  /* spacing */
+  --space-0: 0px;
+  --space-1: 5px;
+  --space-2: 10px;
+  --space-3: 15px;
+  --space-4: 30px;
+  --space-5: 60px;
+  --space-6: 100px;
+  --space-7: 120px;
+  --space-8: 160px;
+
+  /* borders */
+  --border-radius-0: 0;
+  --border-radius-1: 8px;
+  --border-radius-2: 10px;
+  --border-radius-3: 15px;
+
+  --homepage-topbar-height: 69px;
+}
+
+/* screen sizes */
+$max-width-extra-small: 568px;
+$max-width-small: 768px;
+$max-width-extra-medium: 1000px;
+$max-width-medium: 1152px;
+$max-width-large: 1440px;
+
+@for $i from 3 through 9 {
+  .fw_#{$i} {
+    font-weight: #{$i}00;
+  }
+}
+
+$font-size: (
+  10px,
+  12px,
+  14px,
+  18px,
+  24px,
+  36px,
+  48px
+);
+$font-size-len: list.length($font-size);
+
+@for $i from 1 through $font-size-len {
+  .fs_#{$i} {
+    font-size: #{list.nth($font-size, $i)};
+  }
+
+  :root {
+    --fs-#{$i}: #{list.nth($font-size, $i)};
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* font faces */
+
+/* icon fonts helper classes */
+[class^='icon'].circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--color-text);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  &.icon-filter::before {
+    font-size: 14px;
+    transform: translate(-53%, -50%);
+  }
+}
+
+.icon-chevron-up::before {
+  content: '\e801';
+  transform: translate3d(0, -2px, 0) rotate(180deg);
+}

@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Code Challenge for Parsec Academy",
+  "main": "./out/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts",
+    "migrate:make": "knex migrate:make --knexfile ./knexfile.js",
+    "migrate:latest": "knex migrate:latest ./knexfile.js",
+    "migrate:rollback": "knex migrate:rollback ./knexfile.js",
+    "seed:make": "knex seed:make --knexfile ./knexfile.js",
+    "seed:run": "knex seed:run --knexfile ./knexfile.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.3",
+    "@types/knex": "^0.16.1",
+    "dotenv": "^16.4.4",
+    "knex": "^3.1.0",
+    "nodemon": "^3.0.3",
+    "objection": "^3.1.4",
+    "pg": "^8.11.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17"
+  }
+}
