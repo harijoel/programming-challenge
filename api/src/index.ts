@@ -34,7 +34,18 @@ const init = async () => {
     method: 'POST',
     path: '/insert-task',
     handler: async (r, h) => {
-      
+      try {
+        console.log("index.ts arrived")
+        const content = r.payload; // Extracting 'content' from the payload
+  
+        // Assuming db is the database connection
+        await db('tasks').insert(content);
+  
+        return h.response({ message: 'Task inserted successfully' }).code(200);
+      } catch (error) {
+        console.error(error);
+        return h.response({ error: 'Internal server error' }).code(500);        
+      }
     } 
   });
 
