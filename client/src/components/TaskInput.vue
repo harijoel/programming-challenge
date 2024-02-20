@@ -23,3 +23,27 @@ const handleSubmitTask = () => {
 }
 </script>
 
+<style scoped lang="scss">
+.task-input {
+  background-color: var(--theme-c-blue-transparent);
+  box-shadow: var(--box-shadow-1);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--border-radius-1);
+  border-style: solid;
+  border-color: var(--color-accent-one);
+  border-width: 1px;
+}
+.add-button {
+  border-radius: var(--border-radius-1);
+  box-shadow: var(--box-shadow-1);
+  border: none;
+  background-color: white;
+  padding: var(--space-1) var(--space-3);
+  color: var(--theme-c-soft-black);
+  font-weight: bold
+}
+.add-button:hover {
+  cursor: pointer;
+}
+
+</style>
